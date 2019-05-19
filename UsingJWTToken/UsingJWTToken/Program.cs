@@ -263,9 +263,9 @@ namespace UsingJWTToken
             client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", loginResponseDTO.Token);
             HttpResponseMessage response = await client.GetAsync(url);
 
+            String strResult = await response.Content.ReadAsStringAsync();
             if (response.IsSuccessStatusCode)
             {
-                String strResult = await response.Content.ReadAsStringAsync();
                 APIResult apiResult = JsonConvert.DeserializeObject<APIResult>(strResult, new JsonSerializerSettings { MetadataPropertyHandling = MetadataPropertyHandling.Ignore });
                 if (apiResult.Status == true)
                 {
