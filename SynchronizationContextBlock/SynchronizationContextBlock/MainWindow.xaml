@@ -1,0 +1,56 @@
+﻿<Window x:Class="SynchronizationContextBlock.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SynchronizationContextBlock"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="1024">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="50"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Button
+            x:Name="btnWillBlock"
+            Grid.Column="0"
+            FontSize="16"
+            Content="直接呼叫非同步方法，會封鎖" Click="BtnWillBlock_Click"/>
+        <Button
+            x:Name="btnWhyWillNotBlock"
+            Grid.Column="1"
+            FontSize="16"
+            Content="直接呼叫非同步工作，為什麼不會封鎖" Click="BtnWhyWillNotBlock_Click" />
+        <Button
+            x:Name="btnUsingTaskRunWillNotBlock"
+            Grid.Row="1" Grid.Column="0"
+            FontSize="16"
+            Content="不會封鎖，使用 Task.Run 包裹起來" Click="btnUsingTaskRunWillNotBlock_Click"/>
+        <Button
+            x:Name="btnUsingNewThreadWillNotBlock"
+            Grid.Row="1" Grid.Column="1"
+            FontSize="16"
+            Content="不會封鎖，使用 新的執行緒 包裹起來" Click="BtnUsingNewThreadWillNotBlock_Click"/>
+        <Button
+            x:Name="btnResetSynchronizationContextWillNotBlock"
+            Grid.Row="2" Grid.Column="0"
+            FontSize="16"
+            Content="不會封鎖，使用重新設定 ResetSynchronizationContext" Click="BtnResetSynchronizationContextWillNotBlock_Click"/>
+        <Button
+            x:Name="btnUsingTaskLibraryWillNotBlock"
+            Grid.Row="2" Grid.Column="1"
+            FontSize="16"
+            Content="不會封鎖，使用 Task Library" Click="BtnUsingTaskLibraryWillNotBlock_Click" />
+        <TextBlock
+            x:Name="txtbkMessage"
+            Foreground="Red"
+            FontSize="20"
+            Grid.Row="3" Grid.ColumnSpan="2"/>
+    </Grid>
+</Window>
