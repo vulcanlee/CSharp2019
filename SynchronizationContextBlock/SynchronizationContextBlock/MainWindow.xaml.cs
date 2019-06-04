@@ -60,7 +60,7 @@ namespace SynchronizationContextBlock
         private void BtnUsingNewThreadWillNotBlock_Click(object sender, RoutedEventArgs e)
         {
             string result = "";
-            Thread thread = new Thread(async x =>
+            Thread thread = new Thread(x =>
             {
                 Console.WriteLine($"呼叫 await MethodAsync(); 之前，執行緒 ID {Thread.CurrentThread.ManagedThreadId}");
                 result = MethodAsync().Result;
