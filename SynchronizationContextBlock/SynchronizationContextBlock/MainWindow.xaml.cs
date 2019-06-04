@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Http;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
@@ -21,6 +22,7 @@ namespace SynchronizationContextBlock
     /// </summary>
     public partial class MainWindow : Window
     {
+        string url = "https://lobworkshop.azurewebsites.net/api/RemoteSource/Add/8/9/3";
         public MainWindow()
         {
             InitializeComponent();
@@ -36,8 +38,9 @@ namespace SynchronizationContextBlock
         private void BtnWhyWillNotBlock_Click(object sender, RoutedEventArgs e)
         {
             // 當直接把 Task.Delay 拿來使用，請解釋這裡為什麼不會產生執行緒封鎖 Block 的狀態
-            Task.Delay(1000).Wait();
-            txtbkMessage.Text = "BtnWhyWillNotBlock_Click 執行完畢";
+            //Task.Delay(1000).Wait();
+            string result = new HttpClient().GetStringAsync(url).Result;
+            txtbkMessage.Text = $"BtnWhyWillNotBlock_Click 執行完畢，Web API 結果:{result}";
         }
 
         private void btnUsingTaskRunWillNotBlock_Click(object sender, RoutedEventArgs e)
@@ -52,7 +55,6 @@ namespace SynchronizationContextBlock
               }).Result;
             Console.WriteLine($"呼叫 BtnWillNotBlock_Click 之後，執行緒 ID {Thread.CurrentThread.ManagedThreadId}");
             txtbkMessage.Text = "BtnWillBlock_Click 執行完畢 " + result;
-
         }
 
         private void BtnUsingNewThreadWillNotBlock_Click(object sender, RoutedEventArgs e)
@@ -93,7 +95,8 @@ namespace SynchronizationContextBlock
         async Task<string> MethodAsync()
         {
             Console.WriteLine($"呼叫 MethodAsync 之前，執行緒 ID {Thread.CurrentThread.ManagedThreadId}");
-            await Task.Delay(1000);
+            //await Task.Delay(1000);
+            await new HttpClient().GetStringAsync(url);
             Console.WriteLine($"呼叫 MethodAsync 之後，執行緒 ID {Thread.CurrentThread.ManagedThreadId}");
             return " @@恭喜你 - MethodAsync 已經執行完畢了@@ ";
         }
