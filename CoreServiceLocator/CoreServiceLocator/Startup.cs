@@ -28,7 +28,6 @@ namespace CoreServiceLocator
     }
     public class Startup
     {
-        public static IServiceProvider serviceProvider;
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
@@ -43,6 +42,7 @@ namespace CoreServiceLocator
             services.AddScoped<IMessage, ConsoleMessage>();
         }
 
+        public static IServiceProvider serviceProvider;
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
