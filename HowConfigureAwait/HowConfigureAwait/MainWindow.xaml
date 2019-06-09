@@ -1,0 +1,34 @@
+﻿<Window x:Class="HowConfigureAwait.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HowConfigureAwait"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="50"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Button
+            x:Name="btnWillBlock" Content="會封鎖" Click="BtnWillBlock_Click"
+            FontSize="20"/>
+        <Button
+            Grid.Column="1"
+            x:Name="btnWillNotBlock" Content="不會封鎖(非同步工作使用ConfigureAwait)" Click="BtnWillNotBlock_Click"
+            FontSize="20"/>
+        <Button
+            Grid.Column="0" Grid.Row="1"
+            x:Name="btnWillNotBlockByAsyncMethod" Content="會封鎖(非同步方法使用ConfigureAwait)" Click="BtnWillNotBlockByAsyncMethod_Click"
+            FontSize="20"/>
+        <TextBlock
+            Grid.Row="2" Grid.ColumnSpan="2"
+            x:Name="tbMessage" FontSize="20" Foreground="Red"/>
+    </Grid>
+</Window>
