@@ -92,7 +92,7 @@ namespace CoreDILifetimeScope
             message9_1.Write("M9_1 - Ada Chan");
             // 若將底下的程式碼註解起來(在 AddScoped 模式)，則 
             // message1, message2 指向到 ConsoleMessage 會被釋放掉
-            //message9.Write("M9 - Vulcan Lee");
+            message9.Write("M9 - Vulcan Lee");
             #endregion
 
             //Console.WriteLine("Press any key for continuing...");
