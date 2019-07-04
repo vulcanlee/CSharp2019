@@ -12,10 +12,11 @@ namespace WhatsThreadPool
             #region 測試執行緒集區的各種實驗性參數
             // 測試參數1 : 同時要求進行得並行工作
             int testLoop = 12;
+            int backgroundExecuteTimes = 8;
             // 測試參數2 : ThreadPool 的最大可以容許的執行緒數量。
             //ThreadPool.SetMaxThreads(10, 10);
             // 測試參數3 : ThreadPool 預設建立的執行緒數量。
-            ThreadPool.SetMinThreads(10, 10);
+            //ThreadPool.SetMinThreads(12, 12);
             #endregion
 
             ThreadPoolInformation threadPoolInformation = new ThreadPoolInformation();
@@ -43,16 +44,16 @@ namespace WhatsThreadPool
                 {
                     int currentThreadID = Thread.CurrentThread.ManagedThreadId;
                     // 顯示該執行已經開始執行了(已經從執行緒集區內取得到新的執行緒)
-                    Console.WriteLine($"執行緒開始[{idx}]: ID={currentThreadID}, time={DateTime.Now.TimeOfDay}");
+                    Console.WriteLine($"執行緒[{idx}]開始: ID={currentThreadID}, time={DateTime.Now.TimeOfDay}");
 
                     // 列印出現在執行緒的資訊 使用 / 可用 執行緒數量
                     ShowCurrentThreadUsage(threadPoolInformation, threadPoolCurrentInformation);
 
                     // 模擬使用同步方式來等候一個非同步的作業完成
-                    Thread.Sleep(1000 * testLoop);
+                    Thread.Sleep(1000 * backgroundExecuteTimes);
                   
                     // 顯示該執行緒已經完成執行了
-                    Console.WriteLine($"執行緒結束[{idx}]: ID={currentThreadID}, time={DateTime.Now.TimeOfDay}");
+                    Console.WriteLine($"執行緒[{idx}]結束: ID={currentThreadID}, time={DateTime.Now.TimeOfDay}");
 
                     ShowCurrentThreadUsage(threadPoolInformation, threadPoolCurrentInformation);
                     done.Signal();
@@ -117,8 +118,8 @@ namespace WhatsThreadPool
         {
             Console.WriteLine($"   WorkItem Thread :" +
                 $" (Busy:{threadPoolInformation.BusyWorkerThreads}, Free:{threadPoolInformation.AvailableWorkerThreads}, Min:{threadPoolInformation.MinWorkerThreads}, Max:{threadPoolInformation.MaxWorkerThreads})");
-            Console.WriteLine($"   IOPC Thread :" +
-                $" (Busy:{threadPoolInformation.BusyCompletionPortThreads}, Free:{threadPoolInformation.AvailableCompletionPortThreads}, Min:{threadPoolInformation.MinCompletionPortThreads}, Max:{threadPoolInformation.MaxCompletionPortThreads})");
+            //Console.WriteLine($"   IOPC Thread :" +
+            //    $" (Busy:{threadPoolInformation.BusyCompletionPortThreads}, Free:{threadPoolInformation.AvailableCompletionPortThreads}, Min:{threadPoolInformation.MinCompletionPortThreads}, Max:{threadPoolInformation.MaxCompletionPortThreads})");
         }
     }
     // 儲存執行緒集區相關運作參數的類別
