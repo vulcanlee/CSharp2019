@@ -29,7 +29,7 @@ namespace LargeWebConnectionAPIServer.Controllers
             DateTime Complete = DateTime.Now;
             return $"AW:{workerThreadsAvailable} AC:{completionPortThreadsAvailable}" +
                 $" MaxW:{workerThreadsMax} MaxC:{completionPortThreadsMax}" +
-                $" MinW:{workerThreadsMin} MaxC:{completionPortThreadsMin} ({Begin.TimeOfDay} - {Complete.TimeOfDay})";
+                $" MinW:{workerThreadsMin} MinC:{completionPortThreadsMin} ({Begin.TimeOfDay} - {Complete.TimeOfDay})";
         }
         [HttpGet("AddSync/{value1}/{value2}/{delay}")]
         public string AddSync(int value1, int value2, int delay)
@@ -49,7 +49,7 @@ namespace LargeWebConnectionAPIServer.Controllers
             DateTime Complete = DateTime.Now;
             return $"AW:{workerThreadsAvailable} AC:{completionPortThreadsAvailable}" +
                 $" MaxW:{workerThreadsMax} MaxC:{completionPortThreadsMax}" +
-                $" MinW:{workerThreadsMin} MaxC:{completionPortThreadsMin} ({Begin.TimeOfDay} - {Complete.TimeOfDay})";
+                $" MinW:{workerThreadsMin} MinC:{completionPortThreadsMin} ({Begin.TimeOfDay} - {Complete.TimeOfDay})";
         }
         // GET api/values
         [HttpGet]
