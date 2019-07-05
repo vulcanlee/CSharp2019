@@ -86,7 +86,7 @@ namespace WhyNeedAsynchronous
                         APIEndPoint);
                     DateTime complete = DateTime.Now;
                     TimeSpan total = complete - begin;
-                    Console.WriteLine($"Task{idx} Completed ({total.TotalMilliseconds} ms) {result}");
+                    Console.WriteLine($"Task{idx} Completed ({total.TotalMilliseconds} ms) ");
                 }));
             }
 
