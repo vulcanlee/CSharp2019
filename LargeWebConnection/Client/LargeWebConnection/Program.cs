@@ -13,15 +13,15 @@ namespace LargeWebConnection
     {
         static IServiceCollection serviceCollection;
         static IServiceProvider serviceProvider1;
-        static int MaxTasks = 100;
+        static int MaxTasks = 10;
         static string APIServiceName = "lobworkshop";
 
         // 此 URL 是要連上 Azure 上的 Web API 測試端點
-        static string APIEndPoint = "https://lobworkshop.azurewebsites.net/api/RemoteSource/AddASync/8/9/5";
+        static string APIEndPoint = "https://lobworkshop.azurewebsites.net/api/RemoteSource/AddSync/8/9/1200";
         static string APIHost = "http://lobworkshop.azurewebsites.net/";
 
         // 此 URL 是要連上 本地端主機 上的 Web API 測試端點
-        //static string APIEndPoint = "https://localhost:5001/api/values/AddSync/8/9/5";
+        //static string APIEndPoint = "https://localhost:5001/api/values/AddSync/8/9/5000";
         //static string APIHost = "https://localhost:5001/";
 
         static void Main(string[] args)
