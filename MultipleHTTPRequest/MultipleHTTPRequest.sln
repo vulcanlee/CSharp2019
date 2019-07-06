@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29009.5
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ForNETFramework472", "ForNETFramework472\ForNETFramework472.csproj", "{AF23ED69-D753-42F8-AA1A-21610F7988A0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ForNETCore22", "ForNETCore22\ForNETCore22.csproj", "{163FD2C6-B357-4A73-B2E8-3D4E40A0FBAD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AF23ED69-D753-42F8-AA1A-21610F7988A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF23ED69-D753-42F8-AA1A-21610F7988A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF23ED69-D753-42F8-AA1A-21610F7988A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF23ED69-D753-42F8-AA1A-21610F7988A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{163FD2C6-B357-4A73-B2E8-3D4E40A0FBAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{163FD2C6-B357-4A73-B2E8-3D4E40A0FBAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{163FD2C6-B357-4A73-B2E8-3D4E40A0FBAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{163FD2C6-B357-4A73-B2E8-3D4E40A0FBAD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {994445F5-6C98-41CE-AC47-9E77F2E7A48F}
+	EndGlobalSection
+EndGlobal
