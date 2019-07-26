@@ -15,10 +15,10 @@ namespace AspNETCoreUnity.Controllers
         [Dependency]
         public IMessage messageProperty { get; set; }
 
-        public ValuesController(IMessage message)
-        {
-            this.message = message;
-        }
+        //public ValuesController(IMessage message)
+        //{
+        //    this.message = message;
+        //}
         // GET api/values
         [HttpGet]
         public ActionResult<IEnumerable<string>> Get()
