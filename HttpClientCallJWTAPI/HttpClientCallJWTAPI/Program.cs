@@ -21,6 +21,7 @@ namespace HttpClientCallJWTAPI
         static async Task Main(string[] args)
         {
             LoginManager loginManager = new LoginManager();
+            Output("進行登入身分驗證");
             APIResult result = await loginManager.PostAsync(new LoginRequestDTO()
             {
                 Account = "user50",
@@ -36,7 +37,9 @@ namespace HttpClientCallJWTAPI
                 Console.WriteLine($"登入失敗");
                 Console.WriteLine($"{result.Message}");
             }
+            Thread.Sleep(2000);
 
+            Output("利用取得的 JTW Token 呼叫取得部門資訊 Web API");
             DepartmentsManager departmentsManager = new DepartmentsManager();
             result = await departmentsManager.GetAsync(loginManager.SingleItem.Token);
             if (result.Status == true)
@@ -50,9 +53,11 @@ namespace HttpClientCallJWTAPI
                 Console.WriteLine($"{result.Message}");
             }
 
+            Console.WriteLine("等候10秒鐘，等待 JWT Token 失效");
             await Task.Delay(10000);
 
             departmentsManager = new DepartmentsManager();
+            Output("再次呼叫取得部門資訊 Web API，不過，該 JWT Token已經失效了");
             result = await departmentsManager.GetAsync(loginManager.SingleItem.Token);
             if (result.Status == true)
             {
@@ -64,8 +69,10 @@ namespace HttpClientCallJWTAPI
                 Console.WriteLine($"取得部門資料失敗");
                 Console.WriteLine($"{result.Message}");
             }
+            Thread.Sleep(2000);
 
             RefreshTokenService refreshTokenService = new RefreshTokenService();
+            Output("呼叫更新 JWT Token API，取得更新的 JWT Token");
             result = await refreshTokenService.GetAsync(loginManager.SingleItem.RefreshToken);
             if (result.Status == true)
             {
@@ -77,8 +84,10 @@ namespace HttpClientCallJWTAPI
                 Console.WriteLine($"更新 JWT Token 失敗");
                 Console.WriteLine($"{result.Message}");
             }
+            Thread.Sleep(2000);
 
             departmentsManager = new DepartmentsManager();
+            Output("再次呼叫取得部門資訊 Web API，不過，使用剛剛取得的更新 JWT Token");
             result = await departmentsManager.GetAsync(refreshTokenService.SingleItem.Token);
             if (result.Status == true)
             {
@@ -90,9 +99,16 @@ namespace HttpClientCallJWTAPI
                 Console.WriteLine($"取得部門資料失敗");
                 Console.WriteLine($"{result.Message}");
             }
+            Thread.Sleep(2000);
 
             Console.WriteLine("Press any key for continuing...");
             Console.ReadKey();
+        }
+
+        public static void Output(string message)
+        {
+            Console.WriteLine(message);
+            Thread.Sleep(2000);
         }
     }
 
