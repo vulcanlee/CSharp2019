@@ -13,6 +13,10 @@ namespace TaskCancellationToken
         {
             CancellationTokenSource cancellationToken = new CancellationTokenSource();
             CancellationToken token = cancellationToken.Token;
+          
+            // 狀況1 : 在非同步工作啟動後一秒種，發出取消執行訊號
+            //cancellationToken.Cancel();
+
             var MyTask = Task.Run(() =>
             {
                 Console.WriteLine("正在啟動非同步工作");
@@ -24,7 +28,9 @@ namespace TaskCancellationToken
                 Console.WriteLine("非同步工作結束了");
             }, token);
 
-            //Thread.Sleep(1000);
+            // 狀況2 : 在非同步工作啟動後一秒種，發出取消執行訊號
+            Thread.Sleep(1000);
+            // 狀況3 : 在非同步工作啟動後一秒種，發出取消執行訊號
             cancellationToken.Cancel();
 
             Console.WriteLine("按下任一按鍵，檢查工作狀態");
