@@ -62,6 +62,9 @@ namespace ThreadPoolCollection
         private static void EmulateMoreThreads(int defaultSleep, int NewSleep)
         {
             Console.WriteLine();
+            Console.WriteLine();
+            Console.WriteLine($"對於預先配置執行緒將休息 {defaultSleep} ms, 對於新產生的執行緒將休息 {NewSleep} ms");
+            Console.WriteLine();
             for (int i = 1; i <= MaxEmulateThreads; i++)
             {
                 int idx = i;
