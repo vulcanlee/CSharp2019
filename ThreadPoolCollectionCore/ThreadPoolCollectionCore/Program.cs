@@ -46,7 +46,8 @@ namespace ThreadPoolCollectionCore
             Console.WriteLine($"第 4次，產生 {MaxEmulateThreads} 執行緒請求");
             ThreadsOnThreadPool.Clear();
             FindDefaultThreadOnThreadPool();
-            Countdown.Reset(); EmulateMoreThreads((MaxEmulateThreads - MinThreadsOnThreadPool + 1) * 1000, (MaxEmulateThreads - MinThreadsOnThreadPool + 1) * 1000);
+            Countdown.Reset();
+            EmulateMoreThreads((MaxEmulateThreads - MinThreadsOnThreadPool + 1) * 1000, (MaxEmulateThreads - MinThreadsOnThreadPool + 1) * 1000);
             Thread.Sleep(2000);
             Console.WriteLine();
             Console.WriteLine();
@@ -57,6 +58,9 @@ namespace ThreadPoolCollectionCore
 
         private static void EmulateMoreThreads(int defaultSleep, int NewSleep)
         {
+            Console.WriteLine();
+            Console.WriteLine();
+            Console.WriteLine($"對於預先配置執行緒將休息 {defaultSleep} ms, 對於新產生的執行緒將休息 {NewSleep} ms");
             Console.WriteLine();
             for (int i = 1; i <= MaxEmulateThreads; i++)
             {
