@@ -10,10 +10,10 @@ namespace ROPCAuthentication
 {
     class Program
     {
-        static string clientId = "32b3385d-3a7f-4236-a1c1-317bfe9e34a7";
-        static string authority = "0ebeaa81-d84d-4659-be12-e6c28cddb1db";
-        static string account = "user2@vulcano365.onmicrosoft.com";
-        static string password = "Avatar3^%";
+        static string clientId = "應用程式 (用戶端) 識別碼";
+        static string authority = "目錄 (租用戶) 識別碼";
+        static string account = "Office 365 使用者的電子郵件信箱";
+        static string password = "Office 365 使用者的密碼";
 
         static void Main(string[] args)
         {
