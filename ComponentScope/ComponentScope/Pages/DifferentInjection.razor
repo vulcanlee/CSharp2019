@@ -1,0 +1,32 @@
+﻿@page "/DifferentInjection"
+@inherits OwningComponentBase<IMessageScoped>
+@inject IMessageTransient messageTransient1
+@inject IMessageTransient messageTransient2
+@inject IMessageScoped messageScoped1
+@inject IMessageScoped messageScoped2
+@inject IMessageSingleton messageSingleton1
+@inject IMessageSingleton messageSingleton2
+
+<h3>DifferentInjection</h3>
+
+
+<div class="bg-info">messageTransient1 的物件為 @messageTransient1.Hash()</div>
+<div class="bg-warning">messageTransient2 的物件為 @messageTransient2.Hash()</div>
+<div class="bg-info">messageScoped1 的物件為 @messageScoped1.Hash()</div>
+<div class="bg-warning">messageScoped1 的物件為 @messageScoped2.Hash()</div>
+<div class="bg-info">messageSingleton1 的物件為 @messageSingleton1.Hash()</div>
+<div class="bg-warning">messageSingleton2 的物件為 @messageSingleton2.Hash()</div>
+<div />
+<div class="btn btn-outline-danger">messageTransient3 的物件為 @messageTransient3.Hash()</div>
+<div class="btn btn-outline-success">messageScoped3 的物件為 @messageScoped3.Hash()</div>
+<div class="btn btn-outline-dark">messageSingleton3 的物件為 @messageSingleton3.Hash()</div>
+<div class="btn btn-outline-warning">OwningComponentBase 的物件為 @Service.Hash()</div>
+
+@code {
+    [Inject]
+    public IMessageTransient messageTransient3 { get; set; }
+    [Inject]
+    public IMessageScoped messageScoped3 { get; set; }
+    [Inject]
+    public IMessageSingleton messageSingleton3 { get; set; }
+}
