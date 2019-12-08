@@ -1,0 +1,499 @@
+[
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "IHostingEnvironment",
+    "ImplementationType": null,
+    "ImplementationInstance": "HostingEnvironment",
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "IHostEnvironment",
+    "ImplementationType": null,
+    "ImplementationInstance": "HostingEnvironment",
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "HostBuilderContext",
+    "ImplementationType": null,
+    "ImplementationInstance": "HostBuilderContext",
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "IConfiguration",
+    "ImplementationType": null,
+    "ImplementationInstance": null,
+    "ImplementationFactory": "IConfiguration"
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "IApplicationLifetime",
+    "ImplementationType": null,
+    "ImplementationInstance": null,
+    "ImplementationFactory": "IApplicationLifetime"
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "IHostApplicationLifetime",
+    "ImplementationType": "ApplicationLifetime",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "IHostLifetime",
+    "ImplementationType": "ConsoleLifetime",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "IHost",
+    "ImplementationType": "Host",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "IOptions\u00601",
+    "ImplementationType": "OptionsManager\u00601",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Scoped",
+    "ServiceType": "IOptionsSnapshot\u00601",
+    "ImplementationType": "OptionsManager\u00601",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "IOptionsMonitor\u00601",
+    "ImplementationType": "OptionsMonitor\u00601",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Transient",
+    "ServiceType": "IOptionsFactory\u00601",
+    "ImplementationType": "OptionsFactory\u00601",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "IOptionsMonitorCache\u00601",
+    "ImplementationType": "OptionsCache\u00601",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "ILoggerFactory",
+    "ImplementationType": "LoggerFactory",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "ILogger\u00601",
+    "ImplementationType": "Logger\u00601",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "IConfigureOptions\u00601",
+    "ImplementationType": null,
+    "ImplementationInstance": "DefaultLoggerLevelConfigureOptions",
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "IConfigureOptions\u00601",
+    "ImplementationType": null,
+    "ImplementationInstance": "ConfigureNamedOptions\u00601",
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "ILoggerProviderConfigurationFactory",
+    "ImplementationType": "LoggerProviderConfigurationFactory",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "ILoggerProviderConfiguration\u00601",
+    "ImplementationType": "LoggerProviderConfiguration\u00601",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "IConfigureOptions\u00601",
+    "ImplementationType": null,
+    "ImplementationInstance": "LoggerFilterConfigureOptions",
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "IOptionsChangeTokenSource\u00601",
+    "ImplementationType": null,
+    "ImplementationInstance": "ConfigurationChangeTokenSource\u00601",
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "LoggingConfiguration",
+    "ImplementationType": null,
+    "ImplementationInstance": "LoggingConfiguration",
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "ILoggerProvider",
+    "ImplementationType": "ConsoleLoggerProvider",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "IConfigureOptions\u00601",
+    "ImplementationType": "LoggerProviderConfigureOptions\u00602",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "IOptionsChangeTokenSource\u00601",
+    "ImplementationType": "LoggerProviderOptionsChangeTokenSource\u00602",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "ILoggerProvider",
+    "ImplementationType": "DebugLoggerProvider",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "LoggingEventSource",
+    "ImplementationType": null,
+    "ImplementationInstance": "LoggingEventSource",
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "ILoggerProvider",
+    "ImplementationType": "EventSourceLoggerProvider",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "IConfigureOptions\u00601",
+    "ImplementationType": "EventLogFiltersConfigureOptions",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "IOptionsChangeTokenSource\u00601",
+    "ImplementationType": "EventLogFiltersConfigureOptionsChangeSource",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "ILoggerProvider",
+    "ImplementationType": "EventLogLoggerProvider",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "IWebHostEnvironment",
+    "ImplementationType": null,
+    "ImplementationInstance": "HostingEnvironment",
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "IHostingEnvironment",
+    "ImplementationType": null,
+    "ImplementationInstance": "HostingEnvironment",
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "IApplicationLifetime",
+    "ImplementationType": "GenericWebHostApplicationLifetime",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "IConfigureOptions\u00601",
+    "ImplementationType": null,
+    "ImplementationInstance": "ConfigureNamedOptions\u00601",
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "DiagnosticListener",
+    "ImplementationType": null,
+    "ImplementationInstance": "DiagnosticListener",
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "DiagnosticSource",
+    "ImplementationType": null,
+    "ImplementationInstance": "DiagnosticListener",
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "IHttpContextFactory",
+    "ImplementationType": "DefaultHttpContextFactory",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Scoped",
+    "ServiceType": "IMiddlewareFactory",
+    "ImplementationType": "MiddlewareFactory",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "IApplicationBuilderFactory",
+    "ImplementationType": "ApplicationBuilderFactory",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "IConnectionListenerFactory",
+    "ImplementationType": "SocketTransportFactory",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Transient",
+    "ServiceType": "IConfigureOptions\u00601",
+    "ImplementationType": "KestrelServerOptionsSetup",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "IServer",
+    "ImplementationType": "KestrelServer",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "IConfigureOptions\u00601",
+    "ImplementationType": null,
+    "ImplementationInstance": "ConfigureNamedOptions\u00601",
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "IPostConfigureOptions\u00601",
+    "ImplementationType": null,
+    "ImplementationInstance": "PostConfigureOptions\u00601",
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "IOptionsChangeTokenSource\u00601",
+    "ImplementationType": null,
+    "ImplementationInstance": "ConfigurationChangeTokenSource\u00601",
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Transient",
+    "ServiceType": "IStartupFilter",
+    "ImplementationType": "HostFilteringStartupFilter",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Transient",
+    "ServiceType": "IInlineConstraintResolver",
+    "ImplementationType": "DefaultInlineConstraintResolver",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Transient",
+    "ServiceType": "ObjectPoolProvider",
+    "ImplementationType": "DefaultObjectPoolProvider",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "ObjectPool\u00601",
+    "ImplementationType": null,
+    "ImplementationInstance": null,
+    "ImplementationFactory": "ObjectPool\u00601"
+  },
+  {
+    "Lifetime": "Transient",
+    "ServiceType": "TreeRouteBuilder",
+    "ImplementationType": null,
+    "ImplementationInstance": null,
+    "ImplementationFactory": "TreeRouteBuilder"
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "RoutingMarkerService",
+    "ImplementationType": "RoutingMarkerService",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Transient",
+    "ServiceType": "IConfigureOptions\u00601",
+    "ImplementationType": null,
+    "ImplementationInstance": null,
+    "ImplementationFactory": "ConfigureRouteOptions"
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "EndpointDataSource",
+    "ImplementationType": null,
+    "ImplementationInstance": null,
+    "ImplementationFactory": "EndpointDataSource"
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "ParameterPolicyFactory",
+    "ImplementationType": "DefaultParameterPolicyFactory",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "MatcherFactory",
+    "ImplementationType": "DfaMatcherFactory",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Transient",
+    "ServiceType": "DfaMatcherBuilder",
+    "ImplementationType": "DfaMatcherBuilder",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "DfaGraphWriter",
+    "ImplementationType": "DfaGraphWriter",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Transient",
+    "ServiceType": "Lifetime",
+    "ImplementationType": "Lifetime",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "EndpointMetadataComparer",
+    "ImplementationType": null,
+    "ImplementationInstance": null,
+    "ImplementationFactory": "EndpointMetadataComparer"
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "LinkGenerator",
+    "ImplementationType": "DefaultLinkGenerator",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "IEndpointAddressScheme\u00601",
+    "ImplementationType": "EndpointNameAddressScheme",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "IEndpointAddressScheme\u00601",
+    "ImplementationType": "RouteValuesAddressScheme",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "LinkParser",
+    "ImplementationType": "DefaultLinkParser",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "EndpointSelector",
+    "ImplementationType": "DefaultEndpointSelector",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "MatcherPolicy",
+    "ImplementationType": "HttpMethodMatcherPolicy",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "MatcherPolicy",
+    "ImplementationType": "HostMatcherPolicy",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "TemplateBinderFactory",
+    "ImplementationType": "DefaultTemplateBinderFactory",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "RoutePatternTransformer",
+    "ImplementationType": "DefaultRoutePatternTransformer",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "IConfigureOptions\u00601",
+    "ImplementationType": null,
+    "ImplementationInstance": "ConfigureNamedOptions\u00601",
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "IHostedService",
+    "ImplementationType": "GenericWebHostService",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  }
+]

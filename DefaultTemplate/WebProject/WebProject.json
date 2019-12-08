@@ -1,0 +1,1787 @@
+[
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "IHostingEnvironment",
+    "ImplementationType": null,
+    "ImplementationInstance": "HostingEnvironment",
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "IHostEnvironment",
+    "ImplementationType": null,
+    "ImplementationInstance": "HostingEnvironment",
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "HostBuilderContext",
+    "ImplementationType": null,
+    "ImplementationInstance": "HostBuilderContext",
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "IConfiguration",
+    "ImplementationType": null,
+    "ImplementationInstance": null,
+    "ImplementationFactory": "IConfiguration"
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "IApplicationLifetime",
+    "ImplementationType": null,
+    "ImplementationInstance": null,
+    "ImplementationFactory": "IApplicationLifetime"
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "IHostApplicationLifetime",
+    "ImplementationType": "ApplicationLifetime",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "IHostLifetime",
+    "ImplementationType": "ConsoleLifetime",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "IHost",
+    "ImplementationType": "Host",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "IOptions\u00601",
+    "ImplementationType": "OptionsManager\u00601",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Scoped",
+    "ServiceType": "IOptionsSnapshot\u00601",
+    "ImplementationType": "OptionsManager\u00601",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "IOptionsMonitor\u00601",
+    "ImplementationType": "OptionsMonitor\u00601",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Transient",
+    "ServiceType": "IOptionsFactory\u00601",
+    "ImplementationType": "OptionsFactory\u00601",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "IOptionsMonitorCache\u00601",
+    "ImplementationType": "OptionsCache\u00601",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "ILoggerFactory",
+    "ImplementationType": "LoggerFactory",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "ILogger\u00601",
+    "ImplementationType": "Logger\u00601",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "IConfigureOptions\u00601",
+    "ImplementationType": null,
+    "ImplementationInstance": "DefaultLoggerLevelConfigureOptions",
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "IConfigureOptions\u00601",
+    "ImplementationType": null,
+    "ImplementationInstance": "ConfigureNamedOptions\u00601",
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "ILoggerProviderConfigurationFactory",
+    "ImplementationType": "LoggerProviderConfigurationFactory",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "ILoggerProviderConfiguration\u00601",
+    "ImplementationType": "LoggerProviderConfiguration\u00601",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "IConfigureOptions\u00601",
+    "ImplementationType": null,
+    "ImplementationInstance": "LoggerFilterConfigureOptions",
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "IOptionsChangeTokenSource\u00601",
+    "ImplementationType": null,
+    "ImplementationInstance": "ConfigurationChangeTokenSource\u00601",
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "LoggingConfiguration",
+    "ImplementationType": null,
+    "ImplementationInstance": "LoggingConfiguration",
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "ILoggerProvider",
+    "ImplementationType": "ConsoleLoggerProvider",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "IConfigureOptions\u00601",
+    "ImplementationType": "LoggerProviderConfigureOptions\u00602",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "IOptionsChangeTokenSource\u00601",
+    "ImplementationType": "LoggerProviderOptionsChangeTokenSource\u00602",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "ILoggerProvider",
+    "ImplementationType": "DebugLoggerProvider",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "LoggingEventSource",
+    "ImplementationType": null,
+    "ImplementationInstance": "LoggingEventSource",
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "ILoggerProvider",
+    "ImplementationType": "EventSourceLoggerProvider",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "IConfigureOptions\u00601",
+    "ImplementationType": "EventLogFiltersConfigureOptions",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "IOptionsChangeTokenSource\u00601",
+    "ImplementationType": "EventLogFiltersConfigureOptionsChangeSource",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "ILoggerProvider",
+    "ImplementationType": "EventLogLoggerProvider",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "IWebHostEnvironment",
+    "ImplementationType": null,
+    "ImplementationInstance": "HostingEnvironment",
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "IHostingEnvironment",
+    "ImplementationType": null,
+    "ImplementationInstance": "HostingEnvironment",
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "IApplicationLifetime",
+    "ImplementationType": "GenericWebHostApplicationLifetime",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "IConfigureOptions\u00601",
+    "ImplementationType": null,
+    "ImplementationInstance": "ConfigureNamedOptions\u00601",
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "DiagnosticListener",
+    "ImplementationType": null,
+    "ImplementationInstance": "DiagnosticListener",
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "DiagnosticSource",
+    "ImplementationType": null,
+    "ImplementationInstance": "DiagnosticListener",
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "IHttpContextFactory",
+    "ImplementationType": "DefaultHttpContextFactory",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Scoped",
+    "ServiceType": "IMiddlewareFactory",
+    "ImplementationType": "MiddlewareFactory",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "IApplicationBuilderFactory",
+    "ImplementationType": "ApplicationBuilderFactory",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "IConnectionListenerFactory",
+    "ImplementationType": "SocketTransportFactory",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Transient",
+    "ServiceType": "IConfigureOptions\u00601",
+    "ImplementationType": "KestrelServerOptionsSetup",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "IServer",
+    "ImplementationType": "KestrelServer",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "IConfigureOptions\u00601",
+    "ImplementationType": null,
+    "ImplementationInstance": "ConfigureNamedOptions\u00601",
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "IPostConfigureOptions\u00601",
+    "ImplementationType": null,
+    "ImplementationInstance": "PostConfigureOptions\u00601",
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "IOptionsChangeTokenSource\u00601",
+    "ImplementationType": null,
+    "ImplementationInstance": "ConfigurationChangeTokenSource\u00601",
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Transient",
+    "ServiceType": "IStartupFilter",
+    "ImplementationType": "HostFilteringStartupFilter",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Transient",
+    "ServiceType": "IInlineConstraintResolver",
+    "ImplementationType": "DefaultInlineConstraintResolver",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Transient",
+    "ServiceType": "ObjectPoolProvider",
+    "ImplementationType": "DefaultObjectPoolProvider",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "ObjectPool\u00601",
+    "ImplementationType": null,
+    "ImplementationInstance": null,
+    "ImplementationFactory": "ObjectPool\u00601"
+  },
+  {
+    "Lifetime": "Transient",
+    "ServiceType": "TreeRouteBuilder",
+    "ImplementationType": null,
+    "ImplementationInstance": null,
+    "ImplementationFactory": "TreeRouteBuilder"
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "RoutingMarkerService",
+    "ImplementationType": "RoutingMarkerService",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Transient",
+    "ServiceType": "IConfigureOptions\u00601",
+    "ImplementationType": null,
+    "ImplementationInstance": null,
+    "ImplementationFactory": "ConfigureRouteOptions"
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "EndpointDataSource",
+    "ImplementationType": null,
+    "ImplementationInstance": null,
+    "ImplementationFactory": "EndpointDataSource"
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "ParameterPolicyFactory",
+    "ImplementationType": "DefaultParameterPolicyFactory",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "MatcherFactory",
+    "ImplementationType": "DfaMatcherFactory",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Transient",
+    "ServiceType": "DfaMatcherBuilder",
+    "ImplementationType": "DfaMatcherBuilder",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "DfaGraphWriter",
+    "ImplementationType": "DfaGraphWriter",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Transient",
+    "ServiceType": "Lifetime",
+    "ImplementationType": "Lifetime",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "EndpointMetadataComparer",
+    "ImplementationType": null,
+    "ImplementationInstance": null,
+    "ImplementationFactory": "EndpointMetadataComparer"
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "LinkGenerator",
+    "ImplementationType": "DefaultLinkGenerator",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "IEndpointAddressScheme\u00601",
+    "ImplementationType": "EndpointNameAddressScheme",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "IEndpointAddressScheme\u00601",
+    "ImplementationType": "RouteValuesAddressScheme",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "LinkParser",
+    "ImplementationType": "DefaultLinkParser",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "EndpointSelector",
+    "ImplementationType": "DefaultEndpointSelector",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "MatcherPolicy",
+    "ImplementationType": "HttpMethodMatcherPolicy",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "MatcherPolicy",
+    "ImplementationType": "HostMatcherPolicy",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "TemplateBinderFactory",
+    "ImplementationType": "DefaultTemplateBinderFactory",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "RoutePatternTransformer",
+    "ImplementationType": "DefaultRoutePatternTransformer",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "ApplicationPartManager",
+    "ImplementationType": null,
+    "ImplementationInstance": "ApplicationPartManager",
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Transient",
+    "ServiceType": "IConfigureOptions\u00601",
+    "ImplementationType": "MvcCoreMvcOptionsSetup",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Transient",
+    "ServiceType": "IPostConfigureOptions\u00601",
+    "ImplementationType": "MvcOptionsConfigureCompatibilityOptions",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Transient",
+    "ServiceType": "IPostConfigureOptions\u00601",
+    "ImplementationType": "MvcCoreMvcOptionsSetup",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Transient",
+    "ServiceType": "IConfigureOptions\u00601",
+    "ImplementationType": "ApiBehaviorOptionsSetup",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Transient",
+    "ServiceType": "IConfigureOptions\u00601",
+    "ImplementationType": "MvcCoreRouteOptionsSetup",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "ApplicationModelFactory",
+    "ImplementationType": "ApplicationModelFactory",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Transient",
+    "ServiceType": "IApplicationModelProvider",
+    "ImplementationType": "DefaultApplicationModelProvider",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Transient",
+    "ServiceType": "IApplicationModelProvider",
+    "ImplementationType": "ApiBehaviorApplicationModelProvider",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Transient",
+    "ServiceType": "IActionDescriptorProvider",
+    "ImplementationType": "ControllerActionDescriptorProvider",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "IActionDescriptorCollectionProvider",
+    "ImplementationType": "DefaultActionDescriptorCollectionProvider",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "IActionSelector",
+    "ImplementationType": "ActionSelector",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "ActionConstraintCache",
+    "ImplementationType": "ActionConstraintCache",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Transient",
+    "ServiceType": "IActionConstraintProvider",
+    "ImplementationType": "DefaultActionConstraintProvider",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "MatcherPolicy",
+    "ImplementationType": "ConsumesMatcherPolicy",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "MatcherPolicy",
+    "ImplementationType": "ActionConstraintMatcherPolicy",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "IControllerFactory",
+    "ImplementationType": "DefaultControllerFactory",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Transient",
+    "ServiceType": "IControllerActivator",
+    "ImplementationType": "DefaultControllerActivator",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "IControllerFactoryProvider",
+    "ImplementationType": "ControllerFactoryProvider",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "IControllerActivatorProvider",
+    "ImplementationType": "ControllerActivatorProvider",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Transient",
+    "ServiceType": "IControllerPropertyActivator",
+    "ImplementationType": "DefaultControllerPropertyActivator",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "IActionInvokerFactory",
+    "ImplementationType": "ActionInvokerFactory",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Transient",
+    "ServiceType": "IActionInvokerProvider",
+    "ImplementationType": "ControllerActionInvokerProvider",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "ControllerActionInvokerCache",
+    "ImplementationType": "ControllerActionInvokerCache",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "IFilterProvider",
+    "ImplementationType": "DefaultFilterProvider",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "IActionResultTypeMapper",
+    "ImplementationType": "ActionResultTypeMapper",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Transient",
+    "ServiceType": "RequestSizeLimitFilter",
+    "ImplementationType": "RequestSizeLimitFilter",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Transient",
+    "ServiceType": "DisableRequestSizeLimitFilter",
+    "ImplementationType": "DisableRequestSizeLimitFilter",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Transient",
+    "ServiceType": "RequestFormLimitsFilter",
+    "ImplementationType": "RequestFormLimitsFilter",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "IModelMetadataProvider",
+    "ImplementationType": "DefaultModelMetadataProvider",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Transient",
+    "ServiceType": "ICompositeMetadataDetailsProvider",
+    "ImplementationType": null,
+    "ImplementationInstance": null,
+    "ImplementationFactory": "ICompositeMetadataDetailsProvider"
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "IModelBinderFactory",
+    "ImplementationType": "ModelBinderFactory",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "IObjectModelValidator",
+    "ImplementationType": null,
+    "ImplementationInstance": null,
+    "ImplementationFactory": "IObjectModelValidator"
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "ClientValidatorCache",
+    "ImplementationType": "ClientValidatorCache",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "ParameterBinder",
+    "ImplementationType": "ParameterBinder",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "MvcMarkerService",
+    "ImplementationType": "MvcMarkerService",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "ITypeActivatorCache",
+    "ImplementationType": "TypeActivatorCache",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "IUrlHelperFactory",
+    "ImplementationType": "UrlHelperFactory",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "IHttpRequestStreamReaderFactory",
+    "ImplementationType": "MemoryPoolHttpRequestStreamReaderFactory",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "IHttpResponseStreamWriterFactory",
+    "ImplementationType": "MemoryPoolHttpResponseStreamWriterFactory",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "ArrayPool\u00601",
+    "ImplementationType": null,
+    "ImplementationInstance": "TlsOverPerCoreLockedStacksArrayPool\u00601",
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "ArrayPool\u00601",
+    "ImplementationType": null,
+    "ImplementationInstance": "TlsOverPerCoreLockedStacksArrayPool\u00601",
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "OutputFormatterSelector",
+    "ImplementationType": "DefaultOutputFormatterSelector",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "IActionResultExecutor\u00601",
+    "ImplementationType": "ObjectResultExecutor",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "IActionResultExecutor\u00601",
+    "ImplementationType": "PhysicalFileResultExecutor",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "IActionResultExecutor\u00601",
+    "ImplementationType": "VirtualFileResultExecutor",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "IActionResultExecutor\u00601",
+    "ImplementationType": "FileStreamResultExecutor",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "IActionResultExecutor\u00601",
+    "ImplementationType": "FileContentResultExecutor",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "IActionResultExecutor\u00601",
+    "ImplementationType": "RedirectResultExecutor",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "IActionResultExecutor\u00601",
+    "ImplementationType": "LocalRedirectResultExecutor",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "IActionResultExecutor\u00601",
+    "ImplementationType": "RedirectToActionResultExecutor",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "IActionResultExecutor\u00601",
+    "ImplementationType": "RedirectToRouteResultExecutor",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "IActionResultExecutor\u00601",
+    "ImplementationType": "RedirectToPageResultExecutor",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "IActionResultExecutor\u00601",
+    "ImplementationType": "ContentResultExecutor",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "IActionResultExecutor\u00601",
+    "ImplementationType": "SystemTextJsonResultExecutor",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "IClientErrorFactory",
+    "ImplementationType": "ProblemDetailsClientErrorFactory",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "ProblemDetailsFactory",
+    "ImplementationType": "DefaultProblemDetailsFactory",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "MvcRouteHandler",
+    "ImplementationType": "MvcRouteHandler",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Transient",
+    "ServiceType": "MvcAttributeRouteHandler",
+    "ImplementationType": "MvcAttributeRouteHandler",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "ControllerActionEndpointDataSource",
+    "ImplementationType": "ControllerActionEndpointDataSource",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "ActionEndpointFactory",
+    "ImplementationType": "ActionEndpointFactory",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "DynamicControllerEndpointSelector",
+    "ImplementationType": "DynamicControllerEndpointSelector",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "MatcherPolicy",
+    "ImplementationType": "DynamicControllerEndpointMatcherPolicy",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "MiddlewareFilterConfigurationProvider",
+    "ImplementationType": "MiddlewareFilterConfigurationProvider",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "MiddlewareFilterBuilder",
+    "ImplementationType": "MiddlewareFilterBuilder",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "IStartupFilter",
+    "ImplementationType": "MiddlewareFilterBuilderStartupFilter",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Scoped",
+    "ServiceType": "IAuthenticationService",
+    "ImplementationType": "AuthenticationService",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "IClaimsTransformation",
+    "ImplementationType": "NoopClaimsTransformation",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Scoped",
+    "ServiceType": "IAuthenticationHandlerProvider",
+    "ImplementationType": "AuthenticationHandlerProvider",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "IAuthenticationSchemeProvider",
+    "ImplementationType": "AuthenticationSchemeProvider",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Transient",
+    "ServiceType": "IAuthorizationService",
+    "ImplementationType": "DefaultAuthorizationService",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Transient",
+    "ServiceType": "IAuthorizationPolicyProvider",
+    "ImplementationType": "DefaultAuthorizationPolicyProvider",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Transient",
+    "ServiceType": "IAuthorizationHandlerProvider",
+    "ImplementationType": "DefaultAuthorizationHandlerProvider",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Transient",
+    "ServiceType": "IAuthorizationEvaluator",
+    "ImplementationType": "DefaultAuthorizationEvaluator",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Transient",
+    "ServiceType": "IAuthorizationHandlerContextFactory",
+    "ImplementationType": "DefaultAuthorizationHandlerContextFactory",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Transient",
+    "ServiceType": "IAuthorizationHandler",
+    "ImplementationType": "PassThroughAuthorizationHandler",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "AuthorizationPolicyMarkerService",
+    "ImplementationType": "AuthorizationPolicyMarkerService",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Transient",
+    "ServiceType": "IPolicyEvaluator",
+    "ImplementationType": "PolicyEvaluator",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Transient",
+    "ServiceType": "IApplicationModelProvider",
+    "ImplementationType": "AuthorizationApplicationModelProvider",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Transient",
+    "ServiceType": "IConfigureOptions\u00601",
+    "ImplementationType": "MvcDataAnnotationsMvcOptionsSetup",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "IValidationAttributeAdapterProvider",
+    "ImplementationType": "ValidationAttributeAdapterProvider",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "IActivator",
+    "ImplementationType": "TypeForwardingActivator",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "IRegistryPolicyResolver",
+    "ImplementationType": "RegistryPolicyResolver",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "IConfigureOptions\u00601",
+    "ImplementationType": "KeyManagementOptionsSetup",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Transient",
+    "ServiceType": "IConfigureOptions\u00601",
+    "ImplementationType": "DataProtectionOptionsSetup",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "IKeyManager",
+    "ImplementationType": "XmlKeyManager",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "IApplicationDiscriminator",
+    "ImplementationType": "HostingApplicationDiscriminator",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "IHostedService",
+    "ImplementationType": "DataProtectionHostedService",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "IDefaultKeyResolver",
+    "ImplementationType": "DefaultKeyResolver",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "IKeyRingProvider",
+    "ImplementationType": "KeyRingProvider",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "IDataProtectionProvider",
+    "ImplementationType": null,
+    "ImplementationInstance": null,
+    "ImplementationFactory": "IDataProtectionProvider"
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "ICertificateResolver",
+    "ImplementationType": "CertificateResolver",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Transient",
+    "ServiceType": "IConfigureOptions\u00601",
+    "ImplementationType": "AntiforgeryOptionsSetup",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "IAntiforgery",
+    "ImplementationType": "DefaultAntiforgery",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "IAntiforgeryTokenGenerator",
+    "ImplementationType": "DefaultAntiforgeryTokenGenerator",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "IAntiforgeryTokenSerializer",
+    "ImplementationType": "DefaultAntiforgeryTokenSerializer",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "IAntiforgeryTokenStore",
+    "ImplementationType": "DefaultAntiforgeryTokenStore",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "IClaimUidExtractor",
+    "ImplementationType": "DefaultClaimUidExtractor",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "IAntiforgeryAdditionalDataProvider",
+    "ImplementationType": "DefaultAntiforgeryAdditionalDataProvider",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "ObjectPool\u00601",
+    "ImplementationType": null,
+    "ImplementationInstance": null,
+    "ImplementationFactory": "ObjectPool\u00601"
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "HtmlEncoder",
+    "ImplementationType": null,
+    "ImplementationInstance": null,
+    "ImplementationFactory": "HtmlEncoder"
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "JavaScriptEncoder",
+    "ImplementationType": null,
+    "ImplementationInstance": null,
+    "ImplementationFactory": "JavaScriptEncoder"
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "UrlEncoder",
+    "ImplementationType": null,
+    "ImplementationInstance": null,
+    "ImplementationFactory": "UrlEncoder"
+  },
+  {
+    "Lifetime": "Transient",
+    "ServiceType": "IConfigureOptions\u00601",
+    "ImplementationType": "MvcViewOptionsSetup",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Transient",
+    "ServiceType": "IConfigureOptions\u00601",
+    "ImplementationType": "TempDataMvcOptionsSetup",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "ICompositeViewEngine",
+    "ImplementationType": "CompositeViewEngine",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "IActionResultExecutor\u00601",
+    "ImplementationType": "ViewResultExecutor",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "IActionResultExecutor\u00601",
+    "ImplementationType": "PartialViewResultExecutor",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Transient",
+    "ServiceType": "IControllerPropertyActivator",
+    "ImplementationType": "ViewDataDictionaryControllerPropertyActivator",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Transient",
+    "ServiceType": "IHtmlHelper",
+    "ImplementationType": "HtmlHelper",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Transient",
+    "ServiceType": "IHtmlHelper\u00601",
+    "ImplementationType": "HtmlHelper\u00601",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "IHtmlGenerator",
+    "ImplementationType": "DefaultHtmlGenerator",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "ModelExpressionProvider",
+    "ImplementationType": "ModelExpressionProvider",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "IModelExpressionProvider",
+    "ImplementationType": null,
+    "ImplementationInstance": null,
+    "ImplementationFactory": "IModelExpressionProvider"
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "ValidationHtmlAttributeProvider",
+    "ImplementationType": "DefaultValidationHtmlAttributeProvider",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "IJsonHelper",
+    "ImplementationType": "SystemTextJsonHelper",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "ServerComponentSerializer",
+    "ImplementationType": "ServerComponentSerializer",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "IViewComponentSelector",
+    "ImplementationType": "DefaultViewComponentSelector",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "IViewComponentFactory",
+    "ImplementationType": "DefaultViewComponentFactory",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "IViewComponentActivator",
+    "ImplementationType": "DefaultViewComponentActivator",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "IViewComponentDescriptorCollectionProvider",
+    "ImplementationType": "DefaultViewComponentDescriptorCollectionProvider",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "IActionResultExecutor\u00601",
+    "ImplementationType": "ViewComponentResultExecutor",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "ViewComponentInvokerCache",
+    "ImplementationType": "ViewComponentInvokerCache",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Transient",
+    "ServiceType": "IViewComponentDescriptorProvider",
+    "ImplementationType": "DefaultViewComponentDescriptorProvider",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "IViewComponentInvokerFactory",
+    "ImplementationType": "DefaultViewComponentInvokerFactory",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Transient",
+    "ServiceType": "IViewComponentHelper",
+    "ImplementationType": "DefaultViewComponentHelper",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Transient",
+    "ServiceType": "IApplicationModelProvider",
+    "ImplementationType": "TempDataApplicationModelProvider",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Transient",
+    "ServiceType": "IApplicationModelProvider",
+    "ImplementationType": "ViewDataAttributeApplicationModelProvider",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "SaveTempDataFilter",
+    "ImplementationType": "SaveTempDataFilter",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Scoped",
+    "ServiceType": "StaticComponentRenderer",
+    "ImplementationType": "StaticComponentRenderer",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Scoped",
+    "ServiceType": "NavigationManager",
+    "ImplementationType": "HttpNavigationManager",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Scoped",
+    "ServiceType": "IJSRuntime",
+    "ImplementationType": "UnsupportedJavaScriptRuntime",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Scoped",
+    "ServiceType": "INavigationInterception",
+    "ImplementationType": "UnsupportedNavigationInterception",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Transient",
+    "ServiceType": "ControllerSaveTempDataPropertyFilter",
+    "ImplementationType": "ControllerSaveTempDataPropertyFilter",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "ITempDataProvider",
+    "ImplementationType": "CookieTempDataProvider",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "TempDataSerializer",
+    "ImplementationType": "DefaultTempDataSerializer",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "ValidateAntiforgeryTokenAuthorizationFilter",
+    "ImplementationType": "ValidateAntiforgeryTokenAuthorizationFilter",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "AutoValidateAntiforgeryTokenAuthorizationFilter",
+    "ImplementationType": "AutoValidateAntiforgeryTokenAuthorizationFilter",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "ITempDataDictionaryFactory",
+    "ImplementationType": "TempDataDictionaryFactory",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "ArrayPool\u00601",
+    "ImplementationType": null,
+    "ImplementationInstance": "TlsOverPerCoreLockedStacksArrayPool\u00601",
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Scoped",
+    "ServiceType": "IViewBufferScope",
+    "ImplementationType": "MemoryPoolViewBufferScope",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Transient",
+    "ServiceType": "IConfigureOptions\u00601",
+    "ImplementationType": "MvcRazorMvcViewOptionsSetup",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Transient",
+    "ServiceType": "IConfigureOptions\u00601",
+    "ImplementationType": "RazorViewEngineOptionsSetup",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "IRazorViewEngine",
+    "ImplementationType": "RazorViewEngine",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "IViewCompilerProvider",
+    "ImplementationType": "DefaultViewCompilerProvider",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Transient",
+    "ServiceType": "IRazorPageFactoryProvider",
+    "ImplementationType": "DefaultRazorPageFactoryProvider",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "IRazorPageActivator",
+    "ImplementationType": "RazorPageActivator",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "ITagHelperActivator",
+    "ImplementationType": "DefaultTagHelperActivator",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "ITagHelperComponentPropertyActivator",
+    "ImplementationType": "TagHelperComponentPropertyActivator",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "ITagHelperFactory",
+    "ImplementationType": "DefaultTagHelperFactory",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Scoped",
+    "ServiceType": "ITagHelperComponentManager",
+    "ImplementationType": "TagHelperComponentManager",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "IMemoryCache",
+    "ImplementationType": "MemoryCache",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "TagHelperMemoryCacheProvider",
+    "ImplementationType": "TagHelperMemoryCacheProvider",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "IFileVersionProvider",
+    "ImplementationType": "DefaultFileVersionProvider",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Transient",
+    "ServiceType": "IConfigureOptions\u00601",
+    "ImplementationType": "RazorPagesRazorViewEngineOptionsSetup",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Transient",
+    "ServiceType": "IConfigureOptions\u00601",
+    "ImplementationType": "RazorPagesOptionsSetup",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "MatcherPolicy",
+    "ImplementationType": "PageLoaderMatcherPolicy",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "MatcherPolicy",
+    "ImplementationType": "DynamicPageEndpointMatcherPolicy",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "DynamicPageEndpointSelector",
+    "ImplementationType": "DynamicPageEndpointSelector",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "IActionDescriptorProvider",
+    "ImplementationType": "PageActionDescriptorProvider",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "IPageRouteModelProvider",
+    "ImplementationType": "CompiledPageRouteModelProvider",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "PageActionEndpointDataSource",
+    "ImplementationType": "PageActionEndpointDataSource",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "IPageApplicationModelProvider",
+    "ImplementationType": "DefaultPageApplicationModelProvider",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "IPageApplicationModelProvider",
+    "ImplementationType": "AutoValidateAntiforgeryPageApplicationModelProvider",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "IPageApplicationModelProvider",
+    "ImplementationType": "AuthorizationPageApplicationModelProvider",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "IPageApplicationModelProvider",
+    "ImplementationType": "TempDataFilterPageApplicationModelProvider",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "IPageApplicationModelProvider",
+    "ImplementationType": "ViewDataAttributePageApplicationModelProvider",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "IPageApplicationModelProvider",
+    "ImplementationType": "ResponseCacheFilterApplicationModelProvider",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "IPageApplicationModelPartsProvider",
+    "ImplementationType": "DefaultPageApplicationModelPartsProvider",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "IActionInvokerProvider",
+    "ImplementationType": "PageActionInvokerProvider",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "IPageModelActivatorProvider",
+    "ImplementationType": "DefaultPageModelActivatorProvider",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "IPageModelFactoryProvider",
+    "ImplementationType": "DefaultPageModelFactoryProvider",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "IPageActivatorProvider",
+    "ImplementationType": "DefaultPageActivatorProvider",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "IPageFactoryProvider",
+    "ImplementationType": "DefaultPageFactoryProvider",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "IPageLoader",
+    "ImplementationType": null,
+    "ImplementationInstance": null,
+    "ImplementationFactory": "IPageLoader"
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "PageLoader",
+    "ImplementationType": "DefaultPageLoader",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "IPageHandlerMethodSelector",
+    "ImplementationType": "DefaultPageHandlerMethodSelector",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "PageResultExecutor",
+    "ImplementationType": "PageResultExecutor",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Transient",
+    "ServiceType": "PageSaveTempDataPropertyFilter",
+    "ImplementationType": "PageSaveTempDataPropertyFilter",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "IDistributedCacheTagHelperStorage",
+    "ImplementationType": "DistributedCacheTagHelperStorage",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "IDistributedCacheTagHelperFormatter",
+    "ImplementationType": "DistributedCacheTagHelperFormatter",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "IDistributedCacheTagHelperService",
+    "ImplementationType": "DistributedCacheTagHelperService",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "IDistributedCache",
+    "ImplementationType": "MemoryDistributedCache",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "CacheTagHelperMemoryCacheFactory",
+    "ImplementationType": "CacheTagHelperMemoryCacheFactory",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "IConfigureOptions\u00601",
+    "ImplementationType": null,
+    "ImplementationInstance": "ConfigureNamedOptions\u00601",
+    "ImplementationFactory": null
+  },
+  {
+    "Lifetime": "Singleton",
+    "ServiceType": "IHostedService",
+    "ImplementationType": "GenericWebHostService",
+    "ImplementationInstance": null,
+    "ImplementationFactory": null
+  }
+]
