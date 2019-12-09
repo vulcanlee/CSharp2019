@@ -1,0 +1,59 @@
+﻿@page "/TwowayBinding"
+
+<h3>雙向資料綁定</h3>
+
+<input type="range" class="form-control-range" max="8" min="0" step="1"
+       @bind="Index" @bind:event="oninput"/>
+<div class="@background" style="height:200px;border:none">
+    @background
+</div>
+@code {
+    string background = "bg-transparent";
+    private int index;
+
+    public int Index
+    {
+        get { return index; }
+        set
+        {
+            index = value;
+            ShowColor();
+        }
+    }
+
+    void ShowColor()
+    {
+        switch (Index)
+        {
+            case 0:
+                background = "bg-primary";
+                break;
+            case 1:
+                background = "bg-secondary";
+                break;
+            case 2:
+                background = "bg-success ";
+                break;
+            case 3:
+                background = "bg-danger";
+                break;
+            case 4:
+                background = "bg-warning";
+                break;
+            case 5:
+                background = "bg-info";
+                break;
+            case 6:
+                background = "bg-light";
+                break;
+            case 7:
+                background = "bg-dark";
+                break;
+            case 8:
+                background = "bg-white";
+                break;
+            default:
+                break;
+        }
+    }
+}

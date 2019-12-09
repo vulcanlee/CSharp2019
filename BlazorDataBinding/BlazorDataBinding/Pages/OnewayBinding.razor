@@ -1,0 +1,76 @@
+﻿@page "/OnewayBinding"
+@using System.Threading
+@using System.Threading.Tasks
+
+<h3>單向資料綁定</h3>
+
+<div class="@background" style="height:300px;border:none">
+    @background
+</div>
+
+@code {
+    string background = "bg-transparent";
+    int index = 0;
+    //CancellationTokenSource cts = new CancellationTokenSource(TimeSpan.FromSeconds(14));
+    CancellationTokenSource cts = new CancellationTokenSource();
+    CancellationToken token;
+    protected override Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            CancellationToken token = cts.Token;
+            ShowCycle(token);
+        }
+        return Task.FromResult(0);
+    }
+    async Task ShowCycle(CancellationToken token)
+    {
+        while(true)
+        {
+            ShowColor();
+            StateHasChanged();
+            await Task.Delay(900);
+            if(token.IsCancellationRequested)
+            {
+                break;
+            }
+        }
+    }
+    void ShowColor()
+    {
+        switch (index)
+        {
+            case 0:
+                background = "bg-primary";
+                break;
+            case 1:
+                background = "bg-secondary";
+                break;
+            case 2:
+                background = "bg-success ";
+                break;
+            case 3:
+                background = "bg-danger";
+                break;
+            case 4:
+                background = "bg-warning";
+                break;
+            case 5:
+                background = "bg-info";
+                break;
+            case 6:
+                background = "bg-light";
+                break;
+            case 7:
+                background = "bg-dark";
+                break;
+            case 8:
+                background = "bg-white";
+                break;
+            default:
+                break;
+        }
+        index++;
+        if (index > 8) index = 0;
+    }
+}
