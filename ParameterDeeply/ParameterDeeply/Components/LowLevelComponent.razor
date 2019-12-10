@@ -1,0 +1,13 @@
+﻿<div class="card @BackgroundColor">
+    <div class="card-body">
+        <h5 class="card-title">低階元件</h5>
+        <p class="card-text">@LowLevelMessage</p>
+    </div>
+</div>
+
+@code {
+    [Parameter]
+    public string LowLevelMessage { get; set; } = "Lower";
+    [Parameter]
+    public string BackgroundColor { get; set; } = "bg-info";
+}

@@ -1,0 +1,16 @@
+﻿<div class="bg-warning p-4">
+
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title">高階元件自我包含低階元件</h5>
+            <p class="card-text">@HighLevelWithLowMessage</p>
+        </div>
+    </div>
+    <LowLevelComponent LowLevelMessage="@HighLevelWithLowMessage"
+                       BackgroundColor="bg-success" />
+</div>
+
+@code {
+    [Parameter]
+    public string HighLevelWithLowMessage { get; set; } = "Higher";
+}

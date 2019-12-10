@@ -1,0 +1,18 @@
+﻿@page "/"
+
+<h1 class="display-5 text-danger">Blazor元件中的參數傳遞與值變化</h1>
+
+<div class="my-3">
+    <input @bind-value="UserInput" @bind-value:event="oninput" />
+</div>
+
+<div class="card-columns">
+    <HighLevelComponent HighLevelMessage="@UserInput" />
+    <HighLevelComponentWithInput HighLevelComponentWithInputMessage="@UserInput"/>
+    <LowLevelComponent LowLevelMessage="@UserInput" />
+    <HighLevelComponentWithLow HighLevelWithLowMessage="@UserInput" />
+</div>
+
+@code{
+    public string UserInput { get; set; } = "Index";
+}

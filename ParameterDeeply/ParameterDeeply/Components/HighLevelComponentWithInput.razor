@@ -1,0 +1,14 @@
+﻿<div class="card">
+    <div class="card-body">
+        <h5 class="card-title">高階元件有 input</h5>
+        <p class="card-text">@HighLevelComponentWithInputMessage</p>
+        <div class="card-text m-3">
+            <input @bind-value="HighLevelComponentWithInputMessage" @bind-value:event="oninput" />
+        </div>
+    </div>
+</div>
+
+@code {
+    [Parameter]
+    public string HighLevelComponentWithInputMessage { get; set; } = "Higher";
+}
