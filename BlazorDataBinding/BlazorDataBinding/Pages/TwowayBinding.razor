@@ -2,12 +2,18 @@
 
 <h3>雙向資料綁定</h3>
 
+<input type="text" value="@Message1" />
+<div>@Message1</div>
+<input type="text" @bind="Message2" />
+<div>@Message2</div>
 <input type="range" class="form-control-range" max="8" min="0" step="1"
-       @bind="Index" @bind:event="oninput"/>
+       @bind="Index" @bind:event="oninput" />
 <div class="@background" style="height:200px;border:none">
     @background
 </div>
 @code {
+    string Message1 = "Message1";
+    string Message2 = "Message2";
     string background = "bg-transparent";
     private int index;
 

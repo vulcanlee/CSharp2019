@@ -4,16 +4,28 @@
 
 <h3>單向資料綁定</h3>
 
+<div>
+    @Message
+</div>
+<buttn class="btn btn-outline-primary"
+       @onclick="Start">開始動作</buttn>
 <div class="@background" style="height:300px;border:none">
     @background
 </div>
 
 @code {
+    string Message = "尚未接收到任何訊息";
     string background = "bg-transparent";
     int index = 0;
     //CancellationTokenSource cts = new CancellationTokenSource(TimeSpan.FromSeconds(14));
     CancellationTokenSource cts = new CancellationTokenSource();
     CancellationToken token;
+
+    void Start()
+    {
+        Message = "已經接收到要開始動作指令了";
+    }
+
     protected override Task OnAfterRenderAsync(bool firstRender)
     {
         if (firstRender)
