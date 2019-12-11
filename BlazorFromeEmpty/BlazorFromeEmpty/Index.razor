@@ -1,0 +1,19 @@
+﻿@page "/"
+@using Microsoft.AspNetCore.Components.Forms
+@using Microsoft.AspNetCore.Components.Routing
+@using Microsoft.AspNetCore.Components.Web
+
+<h1>從空白 ASP.NET Core 來建立 Blazor 應用程式</h1>
+
+<input @bind-value="Message" @bind-value:event="oninput" />
+<p >@Message</p>
+<button @onclick="clicked">OK</button>
+
+@code{
+    string Message { get; set; } = "Hi 你好";
+    void clicked()
+    {
+        Message = "Click Button";
+    }
+}
+
