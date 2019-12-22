@@ -1,0 +1,15 @@
+﻿@page "/"
+
+<h1>Hello, world!</h1>
+
+Welcome to your new app.
+
+<AuthorizeView>
+    <Authorized>
+        <h1>你好, @context.User.Identity.Name!</h1>
+        <p>因為已經通過身分驗證成功，所以，會看到這個訊息</p>
+    </Authorized>
+    <NotAuthorized>
+        <p>你尚未通過身分驗證，所以，會看到這個訊息</p>
+    </NotAuthorized>
+</AuthorizeView>

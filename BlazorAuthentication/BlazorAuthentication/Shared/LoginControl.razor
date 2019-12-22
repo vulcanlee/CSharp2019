@@ -1,0 +1,25 @@
+﻿@page "/LoginControl"
+<AuthorizeView>
+    <Authorized>
+        <b>Hello, @context.User.Identity.Name!</b>
+        <a class="ml-md-auto btn btn-primary"
+           href="/logout?returnUrl=/"
+           target="_top"> 登出 </a>
+    </Authorized>
+    <NotAuthorized>
+        <input type="text"
+               placeholder="User Name"
+               @bind="@Username" />
+        &nbsp;&nbsp;
+        <input type="password"
+               placeholder="Password"
+               @bind="@Password" />
+        <a class="ml-md-auto btn btn-primary"
+           href="/login?paramUsername=@Username&paramPassword=@Password"
+           target="_top"> 登入 </a>
+    </NotAuthorized>
+</AuthorizeView>
+@code {
+    string Username = "";
+    string Password = "";
+}
