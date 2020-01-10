@@ -1,0 +1,36 @@
+﻿@using System.Threading
+<h3>Blazor 有無使用同步內容之研究</h3>
+
+<button class="btn btn-primary" @onclick="UsingBlazorEvent">使用 Blazor 內建事件機制</button>
+<button class="btn btn-outline-danger" @onclick="UsingExternalThread">使用外部執行緒</button>
+<button class="btn btn-success" @onclick="UsingExternalThreadBySynchronizationContext">使用外部執行緒但透過同步內容</button>
+<div class="display-4 text-warning">
+    @Message
+</div>
+
+@code {
+    public string Message { get; set; }
+    async void UsingBlazorEvent()
+    {
+        Message = "使用 Blazor 內建事件機制更新內容";
+    }
+    async void UsingExternalThread()
+    {
+        await Task.Run(() =>
+        {
+            Message = "不使用同步內容來透過外部執行緒更新內容";
+            StateHasChanged();
+        });
+    }
+    async void UsingExternalThreadBySynchronizationContext()
+    {
+        await Task.Run(async () =>
+        {
+            await InvokeAsync(() =>
+            {
+                Message = "使用同步內容來透過外部執行緒更新內容";
+                StateHasChanged();
+            });
+        });
+    }
+}
