@@ -1,0 +1,63 @@
+﻿@using Microsoft.AspNetCore.Identity;
+@using Microsoft.AspNetCore.Http
+@using Microsoft.AspNetCore.Authentication
+@using System.Security.Claims
+@using Microsoft.AspNetCore.Authentication.Cookies
+
+@inject IHttpContextAccessor HttpContextAccessor
+@inject NavigationManager NavigationManager
+
+@page  "/BlazorAuth"
+
+<h3>Blazor 的登入與登出身分驗證</h3>
+
+<div class="row">
+    <div class="col-md-12 bg-light">
+        <EditForm Model="@userModel" OnValidSubmit="@LoginAsync">
+            <div class="form-group">
+                <label>帳號: </label>
+                <input @bind-value="userModel.Email" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label>密碼: </label>
+                <input type="password" @bind-value="userModel.Password" class="form-control" />
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary">登入</button>
+            </div>
+        </EditForm>
+    </div>
+</div>
+
+@code {
+    public UserModel userModel { get; set; } = new UserModel();
+
+    public async Task LoginAsync()
+    {
+
+        var claims = new List<Claim>()
+        {
+            new Claim(ClaimTypes.Name, userModel.Email),
+            new Claim("UserID", "123")
+        };
+
+        var claimsIdentity = new ClaimsIdentity(claims, "myTest");
+        var principal = new ClaimsPrincipal(claimsIdentity);
+
+        await HttpContextAccessor.HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme,
+                        principal,
+                        new AuthenticationProperties
+                        {
+                            ExpiresUtc = DateTime.UtcNow.AddMinutes(20),
+                            IsPersistent = false,
+                            AllowRefresh = true
+                        });
+        NavigationManager.NavigateTo("/");
+    }
+
+    public class UserModel
+    {
+        public string Email { get; set; }
+        public string Password { get; set; }
+    }
+}
